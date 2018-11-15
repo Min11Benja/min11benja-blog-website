@@ -1,0 +1,50 @@
+.flat-nav-tabs{
+  background: @white - 10;
+  padding: 15px 10px 0 10px;
+  border-top: 1px solid @white - 20;
+  border-left: 1px solid @white - 20;
+  border-right: 1px solid @white - 20;
+  &>li{
+    &>a{
+      color: @black;
+      .border-radius;
+    }
+    &.active{
+      &>a{
+        .box-shadow(0 -2px 0  @black); 
+      }
+    }
+  }
+}
+
+.flat-tab-content{
+  padding-top: 20px;
+}
+
+.dark-page{
+  .flat-nav-tabs{
+    background: @black + 30;
+    border-top: 1px solid @black;
+    border-left: 1px solid @black;
+    border-right: 1px solid @black + 30;
+    &>li{
+      &>a{
+        &, &:hover, &focus{
+          color: @white;
+          .border-radius;
+          background: transparent;
+        }
+      }
+      &.active{
+        &>a{
+          &,&:hover, &:focus{
+            .box-shadow(0 -2px 0  @black); 
+            background: @black + 30 !important;
+            color: @white;
+          }
+        }
+      }
+    }
+  }
+}
+

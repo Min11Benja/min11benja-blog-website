@@ -1,0 +1,18 @@
+/*
+ * Copyright (c) 2009 Jordan Kasper
+ * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
+ * 
+ * Refresh icon by Sallee Jeremy (http://www.iconfinder.com/icondetails/48523/128/refresh_sync_icon)
+ */
+
+.simpleCaptcha {  border-left: 1px solid #ddd;  padding-left: 20px; padding-bottom: 10px}
+.simpleCaptcha p { margin: 0.5em; }
+.simpleCaptcha .captchaIntro, .simpleCaptcha .refreshCaptcha { float: left; }
+.simpleCaptcha .captchaText { font-weight: bold; }
+.simpleCaptcha .refreshButton { height: 1.2em; cursor: pointer; position: relative; top: 0.3em; margin-left: 0.2em; }
+.simpleCaptcha .refreshButtonText { position: absolute; left: -9999px; }
+.simpleCaptcha .captchaImages { clear: left; }
+.simpleCaptcha .captchaImages img{ width: 26px;}
+.simpleCaptcha .captchaImage { margin: 0 2px; border: 2px solid transparent; cursor: pointer; }
+.simpleCaptcha .simpleCaptchaSelected { background-color: #FFDB43; padding: 3px }
+.simpleCaptcha .refreshCaptcha{ margin-top: 6px}

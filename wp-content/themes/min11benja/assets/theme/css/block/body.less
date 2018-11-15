@@ -1,0 +1,44 @@
+body{
+  
+  letter-spacing: 0.3px;
+  background:  @white;
+  overflow-x: hidden;
+  font: 300 13px/22px @font-text;
+}
+
+.body-area{
+  @media (max-width: @tablet) {
+    margin-top: 51px;
+  }
+}
+.content-body{
+ 
+  position: fixed;
+  width: 50%;
+  top: 51px;
+  right:0;
+  overflow-y: auto;
+  overflow-x:hidden;
+  bottom: 50px;
+  box-sizing: content-box;
+  
+  @media (min-width: @tablet) {
+     -webkit-overflow-scrolling: touch;
+  }
+  @media (max-width: @tablet) {
+    width: 100%;
+    left:0;
+    top: 0;
+    position: relative;
+  }
+}
+
+
+body.dark-page{
+  color: @white;
+  background: @black + 20;
+  
+  .content-body{
+    background: @black
+  }
+}

@@ -1,0 +1,357 @@
+@width: 50%;
+.main-header{
+
+  .nav-main{
+    position: fixed;
+    width: @width;
+    background: @color-op1;
+    top: 0;
+    z-index: 200;
+    right: 0;
+    min-height: 50px;
+    border-bottom: 1px solid @color-border;
+    @media (max-width: @tablet) {
+      width: 100%;
+    }
+
+    a{
+      display: block;
+      float: right;
+      width: 50px;
+      height: 50px;
+      position: relative;
+      line-height: 50px;
+      text-align: center;
+      .transition;
+      color: @black;
+      border-left: 1px solid @color-border;
+      .close-t{
+        display: none;
+      }
+      &:before{
+        content: "";
+        position: absolute;
+        height: 5px;
+        top: 0;
+        background: @color-light;
+        width: 100%;
+        left: 0;
+        .transition;
+        .opacity(0);
+      }
+
+      &.active{
+        &:before{
+          .opacity(1);
+        }
+        .open-t{
+          display: none;
+        }
+        .close-t{
+          display: inline-block;
+        }
+      }
+    }
+
+    .itsme{
+      padding: 0 0 0 30px;
+      float: left;
+      font-weight: 700;
+      border: 0;
+      color: @black;
+      padding: 3px 10px;
+      margin-left: 30px;
+      margin-top: 10px;
+      background-color: @color-light;
+    }
+  }
+
+
+
+
+
+
+  .main-nav{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    &>ul{
+      margin-bottom: 50px;
+      &>li{
+        border-bottom: 1px solid fade(@black, 5%);
+
+        &.active{
+          a{
+            &:before{
+              opacity: 1;
+              left: 0;
+            }
+            &:after{
+              opacity: 1;
+              right: 0;
+            }
+          }
+        }
+        &>a{
+          display: block;
+          padding: 20px 0;
+          text-decoration: none;
+          color: @black;
+          font-family: @font-heading;
+          font-weight: 700;
+          font-size: 18px;
+          position: relative;
+          overflow: hidden;
+          &:before{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 80%;
+            opacity: 0.8;
+            border-left: 8px solid @color-light;
+            left: -100%;
+            top: 0;
+            background: fade(@white, 30%);
+            transition: all 0.6s ease 0s;
+          }
+          &:after{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 20%;
+            right: -100%;
+            top: 0;
+            opacity: 0.8;
+            background: @color-light;
+            transition: all 0.6s ease 0s;
+          }
+          span{
+            position: relative;
+            z-index: 2;
+          }
+
+          &:hover{
+            text-decoration: line-through;
+          }
+
+
+        }
+
+        ul{
+          margin: 0;
+          list-style: none;
+          padding: 0;
+          margin-bottom: 30px;
+          margin-top: 15px;
+          padding-top: 20px;
+          position: relative;
+          &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 50px;
+            background: @black;
+            height: 2px;
+            left: 50%;
+            margin-left: -25px;
+          }
+          a{
+            display: block;
+            color: @black;
+            padding: 3px;
+            font-family: @font-heading;
+            font-weight: 700;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  .from-search{
+    margin-bottom: 50px;
+    .input-search{
+      border-radius: 0;
+      border:0;
+      height: 100px;
+      box-shadow: none;
+      font-weight: 700;
+      text-align: center;
+      border-left: 8px solid #FFDB43;
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+      text-transform: capitalize;
+    }
+  }
+
+  .social-share{
+    margin-bottom: 50px;
+    a{
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+      background: @white;
+      font-size: 18px;
+      color: #999;
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+      .transition;
+      &:hover{
+        background: @color-light;
+        color: @black;
+      }
+    }
+  }
+
+}
+
+.title-over{
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgba(0,0,0,0.5);
+  font-size: 12px !important;
+}
+
+.over-fly-area{
+  -webkit-overflow-scrolling: touch;
+  position: fixed;
+  width: @width;
+  top: 51px;
+  box-sizing: content-box;
+  bottom: 0;
+  z-index: 180;
+  left: 50%;
+  background: url(../img/brickwall.png) ;
+  overflow: auto;
+  display: none;
+  @media (max-width: @tablet) {
+    width: 100%;
+    left: 0;
+    padding: 20px 0;
+  }
+  .inner-overfly{
+    position: relative;
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+
+  .middle-overfly{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+  }
+}
+
+.dark-page{
+  .main-header{
+
+    .nav-main{
+      background: @black + 30;
+      border-bottom: 1px solid @black;
+
+      a{
+        border-left: 1px solid @black;
+        color: @white;
+      }
+
+    }
+
+
+  }
+
+
+
+  .over-fly-area{
+    background: url(../img/pat1.png) ;
+  }
+
+
+  .main-nav{
+    &>ul{
+      &>li{
+        border-bottom: 1px solid fade(@black, 5%);
+
+        &>a{
+          &, &:hover, &:focus{
+            background: transparent;
+          }
+          color: @white;
+          &:before{
+            opacity: 0.8;
+            border-left: 8px solid @color-light;
+            background: fade(@black, 30%);
+          }
+          &:after{
+            opacity: 0.8;
+            background: @color-light;
+            transition: all 0.6s ease 0s;
+          }
+
+
+        }
+
+        ul{
+          &:before{
+            background: @black;
+          }
+          a{
+            color: @white;
+          }
+        }
+      }
+    }
+  }
+
+  .title-over{
+    color: rgba(255,255,255,0.5);
+  }
+
+
+  .social-share{
+    a{
+      background: @black + 30;
+      color: @white;
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+      &:hover{
+        background: @color-light;
+        color: @black;
+      }
+    }
+  }
+
+
+  .from-search{
+    .input-search{
+      background: @black + 30;
+      color: @white;
+    }
+  }
+
+}
+
+
+
+
+#menu {
+  .collapse {
+    display: none;
+  }
+  .collapse.in {
+    display: block;
+  }
+  .collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+  }
+
+}

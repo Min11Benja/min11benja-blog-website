@@ -1,0 +1,33 @@
+.list-testimonial{
+  li{
+    margin-bottom: 30px;
+    padding-left: 80px;
+    position: relative;
+    img{
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 10px;
+      left: 0;
+    }
+    .text-testimonial{
+      border-left: 1px solid @color-border ;
+      padding-left: 30px;
+      clear: both;
+      h3{
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.dark-page{
+  .list-testimonial{
+    li{
+      .text-testimonial{
+        border-left: 1px solid @black ;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,28 @@
+.list-progress li {
+  padding: 20px 0;
+  .progress-line {
+    background: #fafafa;
+    border: 1px solid #ebebeb;
+    padding: 5px;
+    .line {
+      height: 2px;
+      background: black;
+      display: block;
+      width: 0;
+    }
+  }
+}
+
+.dark-page{
+  .list-progress li {
+
+    .progress-line {
+      background: @black;
+      border: 1px solid @black + 20;
+
+      .line {
+        background: @white;
+       }
+    }
+  }
+}

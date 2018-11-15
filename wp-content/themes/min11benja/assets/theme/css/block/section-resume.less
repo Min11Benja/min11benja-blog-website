@@ -1,0 +1,55 @@
+.resume-list{
+  padding: 0;
+  margin-bottom: 40px;
+  border-left: 1px solid #ddd;
+  li{
+    list-style: none;
+    padding: 20px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    &:before{
+      content: "";
+      width: 90px;
+      height: 1px;
+      background: #ddd;
+      left: -30px;
+      bottom: 0;
+      position: absolute;
+    }
+    &:after{
+      content: "";
+      width: 30px;
+      height: 30px;
+      right: 0;
+      top: 0;
+      border-top: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      position: absolute;
+    }
+
+    .ic-re{
+      margin-right: 5px;color:  #ddd;
+    }
+  }
+}
+
+.dark-page{
+  .resume-list{
+    border-left: 1px solid @black;
+    li{
+      &:before{
+        background: @black;
+      }
+      &:after{
+        border-top: 1px solid @black;
+        border-right: 1px solid @black;
+      }
+
+      .ic-re{
+        margin-right: 5px;
+        color:  @white - 30;
+      }
+    }
+  }
+}

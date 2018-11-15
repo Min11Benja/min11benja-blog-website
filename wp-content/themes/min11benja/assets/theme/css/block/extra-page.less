@@ -1,0 +1,146 @@
+
+
+.error-page, .coming-page{
+
+  background: @white;
+  position: fixed;
+  width: 100%;
+  border: 20px solid @color-op1;
+  height: 100%;
+  z-index: 100;
+  top:0;
+  left: 0;
+
+  h1{
+    margin-top: 0;
+    font-size: 100px;
+    font-weight: 700;
+  }
+
+  .box{
+    padding: 20px;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+.coming-page{
+  .box{
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  h1{
+    @media (max-width: @tablet) {
+      font-size: 40px;
+    }
+  }
+}
+
+.box-bigborder{
+  border: 20px solid @color-op1;
+}
+
+.dark-page{
+
+  .error-page, .coming-page{
+    background: @black + 30 ;
+    border: 20px solid @black + 20;
+  }
+
+  .box-bigborder{
+
+    border: 20px solid @black + 10;
+  }
+}
+
+.row {
+  margin-bottom: 15px;
+}
+.show-grid {
+  .row {
+    margin-bottom: 15px;
+    span {
+      padding: 10px 0;
+      background: #e1e1e1;
+      display: block;
+      text-align: center;
+    }
+  }
+
+}
+
+
+.dark-page{
+  .show-grid {
+    .row {
+      span {
+        background: @black + 15;
+      }
+    }
+  }
+}
+
+
+.half-box{
+  position: fixed;
+  top: 0;
+  height: 100%;
+  background: url(../img/bg8.jpg) no-repeat center;
+  background-size: cover;
+  @media (max-width: @tablet) {
+    position: relative;
+    height: 300px;
+
+  }
+  &.left-item{
+    left:0;
+    @media (max-width: @tablet) {
+      margin-top: -51px;
+    }
+  }
+
+  &.right-item{
+    right:0;
+    background: url(../img/bg7.jpg) no-repeat center;
+     background-size: cover;
+  }
+
+  .inner-box{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    display: table;
+    height: 100%;
+    .transition;
+    border: 30px solid fade(#f2f2f2, 80%);
+    background: rgba(0,0,0,0.3);
+    &:hover{
+      background: rgba(0,0,0,0.6);
+       border: 30px solid #f2f2f2;
+    }
+  }
+
+  .inner-box.dark{
+    border: 30px solid fade(#1e1e1e, 50%);
+    background: rgba(0,0,0,0.6);
+     &:hover{
+       background: rgba(0,0,0,0.8);
+       border: 30px solid #1e1e1e;
+    }
+  }
+
+
+  .middle{
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+}
+

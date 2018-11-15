@@ -1,0 +1,68 @@
+.btn{
+  .border-radius;
+}
+
+.btnc1{
+  font-family: @font-heading;
+  border: 1px solid @white;
+  border-radius: 0;
+  color: @white;
+  position: relative;
+  overflow: hidden;
+  min-width: 90px;
+  transition: color 0.6s ease 0.3s
+}
+
+.btnc2{
+  font-family: @font-heading;
+  border: 1px solid @white;
+  border-radius: 0;
+  color: @black;
+  position: relative;
+  background: @white;
+  overflow: hidden;
+  min-width: 90px;
+  transition: color 0.6s ease 0.3s;
+  &.with-br{
+    border: 1px solid @color-border;
+  }
+}
+
+.dark-page{
+  .btnc2{
+    color: @white;
+    border: 1px solid @black + 30;
+    background: @black + 30;
+    &.with-br{
+      
+      border: 1px solid @black;
+    }
+  }
+}
+
+.btnc1 span, .btnc2 span{
+  position: relative;
+  font-weight: 700;
+}
+
+.btnc1:before, .btnc2:before{
+  content: "";
+  position: absolute;
+  background: @color-light;
+  height: 100%;
+  width: 100%;
+  left: -100%;
+  top:0;
+  transition: all 0.6s ease 0s;
+}
+
+.btnc1:hover, .btnc2:hover{
+  color: @black;
+  border: 1px solid #FFDB43;
+}
+
+.btnc1:hover:before, .btnc2:hover:before{
+  left: 0;
+
+}
+
