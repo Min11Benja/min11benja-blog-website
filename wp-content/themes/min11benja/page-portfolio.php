@@ -14,11 +14,20 @@ Template Name: Portfolio Page
  *
  * @package min11benja
  */
-
-get_header();
 ?>
 
+<?php 
+if(is_page(16)) {
+ get_header('portfolio');
+}
+else {
+ get_header();
+}
+ wp_head();
+?>
 
+  
+<header>
       <!-- hero  -->
             <div class="hero-01">
                 <div class="hero-border">
@@ -500,37 +509,7 @@ get_header();
                             </div>
                             <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/Simple%20Ricks%20English%20Grammar%20Tenses%20Cheet%20Sheet%20-%20min11benja.png" alt="min11benja-rick-morty-infographic-english-grammar-basic-tenses-lost-in-time">
                         </div>
-<!--
 
-                        <div class="col-sm-6 col-xs-12 item-box img">
-                            <div class="hover-area">
-                                <div class="text-vcenter-area">
-                                    <div class="text-vcenter">
-                                        <h3><a href="" class="link-work">Posters - Clases<i class="fa fa-link"></i></a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="bs-gslider3" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3010">
-                                <div class="carousel-inner" role="listbox">
-
-                                    <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/class-poster-elderly.png" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/fliped-class-poster.png" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/taller-fotografia-class.png" alt="">
-                                    </div>
-
-                                    <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/office-taller-class.png" alt="">
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
--->
 
 
 

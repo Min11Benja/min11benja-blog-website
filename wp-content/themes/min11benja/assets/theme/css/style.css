@@ -277,10 +277,10 @@ body.dark-page .content-body {
   border: 5px solid #141414;
 }
 .title {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-weight: 700;
   border-bottom: 1px solid #dddddd;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .title.dark {
   border-bottom: 1px solid #c9c9c9;
@@ -532,7 +532,7 @@ h5 {
 }
 .content-body h2,
 #load-works h2 {
-  font-size: 25px;
+  font-size: 20px;
 }
 .content-body h3,
 #load-works h3 {
@@ -752,7 +752,7 @@ button:focus {
   color: #000000;
 }
 .title-over {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #ffffff;
@@ -1135,7 +1135,7 @@ button:focus {
   background: #fff;
   width: 100%;
   text-align: center;
-  padding: 0 20px;
+  padding: 10px 20px;
   overflow: hidden;
   border-bottom: 1px solid #ddd;
   border-left: 1px solid #ddd;
@@ -1153,6 +1153,7 @@ button:focus {
 }
 .desc-mini .mid-desc-mini p {
   margin: 0;
+    font-size: 11px;
 }
 .dark-page .desc-mini {
   background: #0f0f0f;

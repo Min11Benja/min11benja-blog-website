@@ -39,8 +39,8 @@ Template Name: blog
 
     <!-- Theme Style -->
     <link href="<?php bloginfo('template_directory');?>/assets/theme/css/style.css" rel="stylesheet" type="text/css">
-    <!-- Your custom css -->
-    <link href="<?php bloginfo('template_directory');?>/assets/theme/css/theme-custom.css" rel="stylesheet">
+    <!-- Your custom css OMITIDO PARA ESTA PAGINA ENE SPECIFICO-->
+  
 
     <!-- Font Icons -->
     <link href="<?php bloginfo('template_directory');?>/assets/external/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -67,7 +67,7 @@ Template Name: blog
             <div class="middle-content">
                 <div class="img-p-area"> <img src="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-bw.png" alt="" class="img-thumbnail no-radius"></div>
                 <span class="itsme">min11benja</span>
-                <h4>Blog Catálogo</h4>
+                <h4>Portafolio</h4>
                 <p>Cargando...</p>
                 <div class="anim-pg">
                     <span></span>
@@ -101,8 +101,8 @@ Template Name: blog
 						wp_nav_menu( array(
 						
 						/*Must be registered with register_nav_menu() in order to be selectable by the user.*/
-							'theme_location'	=> 'blog',
-					
+							'theme_location'	=> 'portfolio',
+		
 						/*container_id: ID that is applied to the container.*/
 							'container_id'		=> 'menu',
 							

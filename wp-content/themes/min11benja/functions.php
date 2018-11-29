@@ -162,7 +162,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /*min11benja Custome Menu*/
 // This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Blog Active Menu', 'min11benja' ),
+		'primary' => __( 'About Active Menu', 'min11benja' ),
+        'blog' => __( 'Blog Active Menu', 'min11benja' ),
+        'portfolio' => __( 'Portfolio Active Menu', 'min11benja' ),
 		'footer' => __( 'Short Footer Menu', 'min11benja' ),
 	) );
 

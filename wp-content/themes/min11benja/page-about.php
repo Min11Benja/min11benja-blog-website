@@ -14,8 +14,19 @@ Template Name: About Page
  *
  * @package min11benja
  */
+?>
 
-get_header();
+<?php 
+if(is_page(18)) {
+ get_header('blog');
+}
+else if(is_page(16)) {
+ get_header('portfolio');
+}
+else {
+ get_header();
+}
+ wp_head();
 ?>
 
 
@@ -56,7 +67,7 @@ get_header();
                         <h4 class="font-normal">Hola extrañ@, soy</h4>
                         <h1 class="myname">min11benja</h1>
                         <h3 class="font-normal with-line">Youtuber, Emprendedor, Full Stack Developer, Profe de Ingles, Arduino Maker</h3>
-                        <p> <a href="#" class="btn btnc1"><span>Descargar C.V.</span></a></p>
+                        <p> <a href="https://drive.google.com/open?id=1mt_V_c_t2jUHVSmJt4DpAnJLj6Y7yTT4" class="btn btnc1" target="_blank"><span>Descargar C.V.</span></a></p>
                     </div>
                 </div>
             </div>
@@ -156,7 +167,7 @@ get_header();
                                 <div class="desc-mini">
                                     <div class="mid-desc-mini">
                                         <h4>Correos</h4>
-                                        <p>info@min11benja.com<br>contacto@estartupero.com<br>contacto@iutuber.com<br>contacto@morralla.com</p>
+                                        <p>info@min11benja.com<br>contacto@estartupero.com<br>contacto@facebookero.com<br>contacto@frontendmaistro.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -164,7 +175,7 @@ get_header();
                                 <div class="desc-mini">
                                     <div class="mid-desc-mini">
                                         <h4>Páginas Web</h4>
-                                        <p> www.iutuber.com<br>www.estartupero.com<br>www.min11benja.com<br>www.morralla.com</p>
+                                        <p> www.min11benja.com<br>www.estartupero.com<br>www.facebookero.com<br>www.frontendmaistro.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -174,8 +185,8 @@ get_header();
                                         <h4>Canales en Youtube</h4>
                                         <p>min11benja</p>
                                         <p>estartupero</p>
-                                        <p>iutuber</p>
-                                        <p>morralla</p>
+                                        <p>facebookero</p>
+                                        <p>frontendmaistro</p>
                                     </div>
                                 </div>
                             </div>
