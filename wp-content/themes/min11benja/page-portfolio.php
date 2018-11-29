@@ -314,6 +314,16 @@ else {
                             <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/asgtek.png" alt="min11benja-asg-tek-paginaweb-website">
                         </div>
                         
+                           <div class="col-sm-4 col-xs-6 item-box pgw">
+                            <div class="hover-area">
+                                <div class="text-vcenter-area">
+                                    <div class="text-vcenter">
+                                        <h3><a href="http://containerparkslp.com/" target="_blank">Container Park SLP <i class="fa fa-link"></i></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/containerpark.png" alt="min11benja-containerparkslp-paginaweb-website">
+                        </div>
                        
                         
                         
