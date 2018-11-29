@@ -249,8 +249,20 @@ else {
                                     </div>
                                 </div>
                             </div>
-                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/video-idea.png" alt="">
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/good-idea-video.png" alt="">
                         </div>
+                        
+                         <div class="col-sm-4 col-xs-6 item-box vid">
+                            <div class="hover-area">
+                                <div class="text-vcenter-area">
+                                    <div class="text-vcenter">
+                                        <h3><a href="https://www.youtube.com/watch?v=aJATT57Ys68" target="_blank">Video - SpeedCode Tinder<i class="fa fa-link"></i></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/tinder-video.png" alt="">
+                        </div>
+                        
                         <div class="col-sm-4 col-xs-6 item-box img">
                             <div class="hover-area">
                                 <div class="text-vcenter-area">
