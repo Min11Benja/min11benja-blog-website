@@ -236,6 +236,53 @@ else {
                             </div>
                             <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/urban-clean.png" alt="">
                         </div>
+                        
+                            <div class="col-sm-4 col-xs-6 item-box pgw">
+                            <div class="hover-area">
+                                <div class="text-vcenter-area">
+                                    <div class="text-vcenter">
+                                        <h3><a href="http://www.magnocalderon.com/" target="_blank">Magno Calderon <i class="fa fa-link"></i></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/magno-calderon.png" alt="min11benja-magnocalderon-paginaweb-website">
+                        </div>
+                        
+                         <div class="col-sm-4 col-xs-6 item-box pgw">
+                            <div class="hover-area">
+                                <div class="text-vcenter-area">
+                                    <div class="text-vcenter">
+                                        <h3><a href="http://doña-ines.com.s3-website-us-east-1.amazonaws.com/" target="_blank">Doña Ines SLP <i class="fa fa-link"></i></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/donaines.png" alt="min11benja-donaines-paginaweb-website">
+                        </div>
+                        
+                          <div class="col-sm-4 col-xs-6 item-box pgw">
+                            <div class="hover-area">
+                                <div class="text-vcenter-area">
+                                    <div class="text-vcenter">
+                                        <h3><a href="http://laparrillaslp.com/" target="_blank">La Parrilla SLP <i class="fa fa-link"></i></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/laparrilla.png" alt="min11benja-laparrilla-paginaweb-website">
+                        </div>
+                        
+                         <div class="col-sm-4 col-xs-6 item-box pgw">
+                            <div class="hover-area">
+                                <div class="text-vcenter-area">
+                                    <div class="text-vcenter">
+                                        <h3><a href="http://qleanersco.mx/" target="_blank">Qleaners <i class="fa fa-link"></i></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/qleaners.png" alt="min11benja-qleaners-paginaweb-website">
+                        </div>
+                        
+                        
+                        
                         <div class="col-sm-4 col-xs-6 item-box pgw">
                             <div class="hover-area">
                                 <div class="text-vcenter-area">
