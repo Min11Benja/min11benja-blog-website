@@ -281,6 +281,42 @@ else {
                             <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/qleaners.png" alt="min11benja-qleaners-paginaweb-website">
                         </div>
                         
+                          <div class="col-sm-4 col-xs-6 item-box pgw">
+                            <div class="hover-area">
+                                <div class="text-vcenter-area">
+                                    <div class="text-vcenter">
+                                        <h3><a href="http://yeiyari.mx/" target="_blank">Yeiyari - en construccion <i class="fa fa-link"></i></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/yeiyari-en-construccion.png" alt="min11benja-yeiyari-paginaweb-website">
+                        </div>
+                        
+                          <div class="col-sm-4 col-xs-6 item-box pgw">
+                            <div class="hover-area">
+                                <div class="text-vcenter-area">
+                                    <div class="text-vcenter">
+                                        <h3><a href="https://s3.amazonaws.com/mussicalive.com/index-5.html" target="_blank">Mussica - en construccion <i class="fa fa-link"></i></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/mussica-enconstruccion.png" alt="min11benja-mussica-paginaweb-website">
+                        </div>
+                        
+                        <div class="col-sm-4 col-xs-6 item-box pgw">
+                            <div class="hover-area">
+                                <div class="text-vcenter-area">
+                                    <div class="text-vcenter">
+                                        <h3><a href="https://s3.amazonaws.com/anana-temp-site/index.html" target="_blank">ASG Tek - Wordpress <i class="fa fa-link"></i></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/asgtek.png" alt="min11benja-asg-tek-paginaweb-website">
+                        </div>
+                        
+                       
+                        
+                        
                         
                         
                         <div class="col-sm-4 col-xs-6 item-box pgw">
