@@ -147,7 +147,7 @@ else {
                                     </div>
                                 </div>
                             </div>
-                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/eme.png" alt="">
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/eme.png" alt="min11benja-eme-bar-website">
                         </div>
 
 
@@ -159,10 +159,36 @@ else {
                                     </div>
                                 </div>
                             </div>
-                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/imlux.png" alt="">
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/imlux.png" alt="min11benja-imlux-website">
                         </div>
 
+                         <div class="col-sm-4 col-xs-6 item-box pgw">
+                            <div class="hover-area">
+                                <div class="text-vcenter-area">
+                                    <div class="text-vcenter">
+                                        <h3><a href="http://www.ilbasilico.mx/" target="_blank">IlBasilico<i class="fa fa-link"></i></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/ilbasilico-website.png" alt="min11benja-ilbasilico-website">
+                        </div>
+                        
+                         <div class="col-sm-4 col-xs-6 item-box pgw">
+                            <div class="hover-area">
+                                <div class="text-vcenter-area">
+                                    <div class="text-vcenter">
+                                        <h3><a href="http://www.anana.mx/" target="_blank">Ananá-en construccion<i class="fa fa-link"></i></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/anana-construccion.png" alt="min11benja-anana-en-construccion-website">
+                        </div>
+                        
+                     
 
+                       
+                        
+                        
                         <div class="col-sm-4 col-xs-6 item-box pgw">
                             <div class="hover-area">
                                 <div class="text-vcenter-area">
@@ -450,7 +476,33 @@ else {
                             </div>
                             <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/LVL%20UP%208.5%20x%2011%20trifold2.jpg" alt="min11benja-speedcode-instagram">
                         </div>
-
+                        
+                           <div class="col-sm-4 col-xs-6 item-box pgw">
+                            <div class="hover-area">
+                                <div class="text-vcenter-area">
+                                    <div class="text-vcenter">
+                                        <h3><a href="https://codepen.io/Min11Benja/full/ReyPPR/" target="_blank">Correo - Responsivo<i class="fa fa-link"></i></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/asg-tek-newsletter.jpg" alt="min11benja-asg-tek-newsletter">
+                        </div>
+                        
+                           <div class="col-sm-4 col-xs-6 item-box pgw">
+                            <div class="hover-area">
+                                <div class="text-vcenter-area">
+                                    <div class="text-vcenter">
+                                        <h3><a href="https://codepen.io/Min11Benja/pen/xQQxJR" target="_blank">Correo - Responsivo<i class="fa fa-link"></i></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/arcones-email.png" alt="min11benja-arcones-laexcelencia-productos">
+                        </div>
+                        
+                        
+                        
+                        <!--FULL IMAGE 6/6 POsters-->
+                        
    <div class="col-sm-12 col-xs-6 item-box img">
                             <div class="hover-area">
                                 <div class="text-vcenter-area">
