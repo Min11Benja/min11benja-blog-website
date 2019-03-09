@@ -14,27 +14,35 @@
 
 get_header();
 ?>
+<!-- Blog Post -->
+        <div class="content-body">
+            <div class="section-padd br-t ">
+                <div class="container-body clearfix">
+                    <div class="white-space-30"></div>
+						<!-- php get blog post loop -->
+						<?php
+						while ( have_posts() ) :
+							the_post();
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+							 get_template_part( 'template-parts/content-single', get_post_type() );
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+							// If comments are open or we have at least one comment, load up the comment template.
+							if ( comments_open() || get_comments_number() ) :
+								comments_template();
+							endif;
 
-			get_template_part( 'template-parts/content', 'page' );
+						endwhile; // End of the loop.
+						?>
+                
+						
+					</div><!-- .blog-post-item -->
+				</div><!-- .container-body .clearfix -->
+			</div><!-- .section-padd .br-t -->	
+		</div><!-- .content-body -->	
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
 
-		endwhile; // End of the loop.
-		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+
 get_footer();

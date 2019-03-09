@@ -339,6 +339,17 @@ else {
                             </div>
                             <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/nomilive.png" alt="">
                         </div>
+                        
+                          <div class="col-sm-4 col-xs-6 item-box pgw">
+                            <div class="hover-area">
+                                <div class="text-vcenter-area">
+                                    <div class="text-vcenter">
+                                        <h3><a href="https://codepen.io/Min11Benja/full/awzXzR/" target="_blank">Code Snipet- Jobs Quote <i class="fa fa-link"></i></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/stevejobs-snipet.png" alt="min11benja-codesnipet-stevejobs-quote">
+                        </div>
 
 
                         <!--PART 3-->
@@ -481,16 +492,17 @@ else {
                             <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/instagra-roket.png" alt="min11benja-speedcode-instagram">
                         </div>
 
-                        <div class="col-sm-4 col-xs-6 item-box vid">
+                      <div class="col-sm-4 col-xs-6 item-box vid">
                             <div class="hover-area">
                                 <div class="text-vcenter-area">
                                     <div class="text-vcenter">
-                                        <h3><a href="https://www.youtube.com/watch?v=ybzXZMxmkxM&" target="_blank">marketing - video <i class="fa fa-link"></i></a></h3>
+                                        <h3><a href="https://www.youtube.com/watch?v=tPGlJtG1qBU" target="_blank">estartupero - video <i class="fa fa-link"></i></a></h3>
                                     </div>
                                 </div>
                             </div>
-                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/FACEBOOKvSYOUTUBE.png" alt="min11benja-speedcode-video-facebook-vs-youtube">
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/video-idea.png" alt="min11benja-speedcode-video-roben-idea-startup">
                         </div>
+                        
 
                         <div class="col-sm-4 col-xs-6 item-box vid">
                             <div class="hover-area">
@@ -526,17 +538,17 @@ else {
                         </div>
 
 
-                        <div class="col-sm-4 col-xs-6 item-box vid">
+                       
+                           <div class="col-sm-4 col-xs-6 item-box vid">
                             <div class="hover-area">
                                 <div class="text-vcenter-area">
                                     <div class="text-vcenter">
-                                        <h3><a href="https://www.youtube.com/watch?v=tPGlJtG1qBU" target="_blank">estartupero - video <i class="fa fa-link"></i></a></h3>
+                                        <h3><a href="https://www.youtube.com/watch?v=ybzXZMxmkxM&" target="_blank">marketing - video <i class="fa fa-link"></i></a></h3>
                                     </div>
                                 </div>
                             </div>
-                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/video-idea.png" alt="min11benja-speedcode-video-roben-idea-startup">
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/FACEBOOKvSYOUTUBE.png" alt="min11benja-speedcode-video-facebook-vs-youtube">
                         </div>
-
 
                         <div class="col-sm-6 col-xs-6 item-box img">
                             <div class="hover-area">
@@ -574,12 +586,25 @@ else {
                             <div class="hover-area">
                                 <div class="text-vcenter-area">
                                     <div class="text-vcenter">
+                                        <h3><a href="https://codepen.io/Min11Benja/pen/xQQxJR" target="_blank">Correo - Responsivo<i class="fa fa-link"></i></a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/nomilive-newsltter-email.png" alt="min11benja-nomilive-newsletter-followup">
+                        </div>
+                        
+                           <div class="col-sm-4 col-xs-6 item-box pgw">
+                            <div class="hover-area">
+                                <div class="text-vcenter-area">
+                                    <div class="text-vcenter">
                                         <h3><a href="https://codepen.io/Min11Benja/full/ReyPPR/" target="_blank">Correo - Responsivo<i class="fa fa-link"></i></a></h3>
                                     </div>
                                 </div>
                             </div>
                             <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/asg-tek-newsletter.jpg" alt="min11benja-asg-tek-newsletter">
                         </div>
+                        
+                     
                         
                            <div class="col-sm-4 col-xs-6 item-box pgw">
                             <div class="hover-area">
@@ -592,6 +617,7 @@ else {
                             <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/arcones-email.png" alt="min11benja-arcones-laexcelencia-productos">
                         </div>
                         
+                         
                         
                         
                         <!--FULL IMAGE 6/6 POsters-->
@@ -650,7 +676,19 @@ else {
                                 </div>
                             </div>
                         </div>
-
+                        
+                         <div class="col-sm-6 col-xs-12 item-box img">
+                            <div class="hover-area">
+                                <div class="text-vcenter-area">
+                                    <div class="text-vcenter">
+                                        
+                                        <div class="thumb-top"><a href="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/stev-jobs-illustration-01.png" class="image-popup" title=" Steve Jobs Illustración "><img src="<?php bloginfo('template_directory');?>/" class="img-thumbnail no-radius"  alt="Steve Jobs Quote Illustration"></a></div>
+                  
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/stev-jobs-illustration-01.png" alt="min11benja-rick-morty-infographic-english-grammar-basic-tenses-lost-in-time">
+                        </div>
 
   <div class="col-sm-6 col-xs-12 item-box img">
                             <div class="hover-area">

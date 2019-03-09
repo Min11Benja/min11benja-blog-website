@@ -177,7 +177,7 @@ function getPostViews($postID){
         add_post_meta($postID, $count_key, '0');
         return "0 View";
     }
-    return $count.' Views';
+    return $count.' ';
 }
 function setPostViews($postID) {
     $count_key = 'post_views_count';
@@ -193,3 +193,59 @@ function setPostViews($postID) {
 }
 // Remove issues with prefetching adding extra views
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+/*Custome comments*/
+
+
+function mytheme_comment($comment, $args, $depth) {
+    if ( 'div' === $args['style'] ) {
+        $tag       = 'div';
+        $add_below = 'comment';
+    } else {
+        $tag       = 'li';
+        $add_below = 'div-comment';
+    }?>
+    <<?php echo $tag; ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?> id="comment-<?php comment_ID() ?>"><?php 
+    if ( 'div' != $args['style'] ) { ?>
+        <div id="div-comment-<?php comment_ID() ?>" class="post-comment"><?php
+    } ?>
+            
+       <img src="<?php bloginfo('template_directory');?>/assets/theme/img/people/6.jpg" class="img-thumbnail img-circle img-profile" alt="">
+            
+            <?php 
+        if ( $comment->comment_approved == '0' ) { ?>
+            <em class="comment-awaiting-moderation"><?php _e( 'Tu comentario esta en espera de aprobación.' ); ?></em><br/><?php 
+        } ?>
+        <div class="date">
+            <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>"><?php
+                /* translators: 1: date, 2: time */
+                printf( 
+                    __('Día: %1$s a las %2$s'), 
+                    get_comment_date(),  
+                    get_comment_time() 
+                ); ?>
+            </a><?php 
+            edit_comment_link( __( '(Editar)' ), '  ', '' ); ?>
+        </div>
+            <p>
+            <?php comment_text(); ?>
+            </p>
+        
+
+        <div class="reply"><?php 
+                comment_reply_link( 
+                    array_merge( 
+                        $args, 
+                        array( 
+                            'add_below' => $add_below, 
+                            'depth'     => $depth, 
+                            'max_depth' => $args['max_depth'] 
+                        ) 
+                    ) 
+                ); ?>
+        </div><?php 
+    if ( 'div' != $args['style'] ) : ?>
+        </div><?php 
+    endif;
+}
+

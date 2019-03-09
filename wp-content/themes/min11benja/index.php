@@ -1,26 +1,24 @@
 <?php
 /**
- * The main template file
+ * The template for displaying all pages
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package min11benja
  */
-
-<?php 
-if(is_page(18)) {
- get_header('blog');
-}
-else {
- get_header();
-}
- wp_head();
 ?>
+<?php 
+
+ get_header('blog');
+
+
+?>
+
  <!-- hero  -->
             <div class="hero-01">
                 <div class="hero-border">
@@ -100,94 +98,45 @@ else {
                     <section id="content1" class="tab-content">
                         
                         <!--DEFAULT HEADER TYPE DESC BLOG POST-->
-                             <div class="blog-card">
+                        <div class="blog-card">
                             <div class="meta">
-                                <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
-                                <ul class="details">
-                                    <li>Total Articulos:#482</li>
-                                    <li>Total Suscriptores:#10,101</li>
-                                    <li>Total Vistas: #1,000,000</li>
-                                    <li>Total Comentarios:#744</li>
-                                </ul>
+                                <div class="photo" style="background-image: url('<?php bloginfo('template_directory');?>/assets/theme/img/blog/counter-bg.png')"></div>
+                            
                             </div>
                             <div class="description">
-                                <h1 class="text-black">LOS TOP 3 BLOGS MÁS VISTOS</h1>
-                                <h2>Los temas más populares y vistos del 2018</h2>
+                                <h1 class="text-black">LOS TOP 3 MÁS VISTOS</h1>
+                                <h2>Los temas más populares y vistos del blog</h2>
 
                             </div>
                         </div>
                         
-                    <!--PHP LOOP ARTICLE IF POST & IF CAT-1-->
-                         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                         <?php if (in_category('cat-1')) : ?>
-                        
-                           <div class="blog-card alt">
-                            <div class="meta">
-                                
-                                <!--if it has thubnail-->
-                                <?php if (has_post_thumbnail()): ?>
-                                    <?php the_post_thumbnail(array(150,150));?>
-                                        <?php else: ?>
-                                            <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
-                                <?php endif; ?>      
-                                
-                                
-                                
-                                <ul class="details">
-                                     <!--Display Dynami post author-->
-                                    <li class="author"><a href="#"><?php the_author(); ?></a></li>
-                                     <!--Display Dynami post date-->
-                                    <li class="date"><?php echo get_the_date( 'Y-m-d' ); ?></li>
-                                     <!--Display Dynami post tags-->
-                                    <li class="tags">
-                                        
-                                        <?php 
-                                        $tags = get_tags(array(
-                                        'hide_empty' => false
-                                        ));
-                                        echo '<ul>';
-                                        foreach ($tags as $tag) {
-                                          echo '<li>' . $tag->name . '</li>';
-                                        }
-                                        echo '</ul>';
-                                        ?>
-                                        
-                                    </li>
-                                    <!--Display Dynami post views-->
-                                    <li>Vistas: #<?php echo getPostViews(get_the_ID()); ?></li>
-                                     <!--Display Dynami post comments-->
-                                    <li>Comentarios:#<?php $totalcomments = get_comments_number(); echo $totalcomments; ?></li>
-                                </ul>
-                            </div>
-                            <div class="description">
-                                <!--Display Dynami Title-->
-                                <h1 class="text-black"><?php the_title(); ?></h1>
-                                <!--Display dynami sub title-->
-                                <h2><?php the_subtitle(); ?></h2>
-                                <!--display dynamic expert-->
-                                <p class="text-black"> <?php the_excerpt();?></p>
-                                <p class="read-more">
-                                    <!--article cat 1 dynamic link-->
-                                    <a href="<?php the_permalink();?>" class="post-link">Leer más</a>
-                                </p>
-                            </div>
-                        </div>
-                        <?php endif; endwhile; endif; ?>
-                        
-                        
+                    <!--Blog Post Loop Top 3 post -->
+                    
+                      <?php
+                        $q_mostViewed = [
+                            'meta_key' => 'post_views_count',
+                            'orderby' => 'meta_value_num',
+                            'order' => 'DESC',
+                            'posts_per_page' => '3'
+                        ];
+                        $mostViewed = new WP_Query($q_mostViewed);
+                        if ($mostViewed->have_posts()) :
+                            while ($mostViewed->have_posts()) :
+                                $mostViewed->the_post(); ?>
+                                   <?php  get_template_part( 'template-parts/content', get_post_type() ); ?> 
+                            <?php endwhile; 
+                        endif; ?>
+
+                    <!--end loop -->
+  
                     </section>
                     
+                         <!--TEACH-->
                     <section id="content2" class="tab-content">
                         
-                                   <div class="blog-card">
+                        <div class="blog-card">
                             <div class="meta">
-                                <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
-                                <ul class="details">
-                                    <li>Total Articulos:#482</li>
-                                    <li>Total Suscriptores:#10,101</li>
-                                    <li>Total Vistas: #1,000,000</li>
-                                    <li>Total Comentarios:#744</li>
-                                </ul>
+                                <div class="photo" style="background-image: url('<?php bloginfo('template_directory');?>/assets/theme/img/blog/learning-share.jpeg')"></div>
                             </div>
                             <div class="description">
                                 <h1 class="text-black">LO QUE ESTOY APRENDIENDO</h1>
@@ -196,80 +145,90 @@ else {
                             </div>
                         </div>
                         
+                          <!--Blog Post Loop teach = 10 -->
+                                
+                    <?php query_posts('cat=10'); ?>
+                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                        <?php  get_template_part( 'template-parts/content', get_post_type() ); ?>
+                        <?php endwhile; endif; ?>
+               <!--end loop -->
                         
-                           <!--PHP LOOP ARTICLE IF POST & IF CAT-1-->
-                         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                         <?php if (in_category('cat-2')) : ?>
-                        
-                           <div class="blog-card alt">
+                    </section>
+                    
+                      <!--REVIEWS-->
+                    <section id="content3" class="tab-content">
+                           <div class="blog-card">
                             <div class="meta">
-                                
-                                <!--if it has thubnail-->
-                                <?php if (has_post_thumbnail()): ?>
-                                    <?php the_post_thumbnail(array(150,150));?>
-                                        <?php else: ?>
-                                            <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
-                                <?php endif; ?>      
-                                
-                                
-                                
-                                <ul class="details">
-                                     <!--Display Dynami post author-->
-                                    <li class="author"><a href="#"><?php the_author(); ?></a></li>
-                                     <!--Display Dynami post date-->
-                                    <li class="date"><?php echo get_the_date( 'Y-m-d' ); ?></li>
-                                     <!--Display Dynami post tags-->
-                                    <li class="tags">
-                                        
-                                        <?php 
-                                        $tags = get_tags(array(
-                                        'hide_empty' => false
-                                        ));
-                                        echo '<ul>';
-                                        foreach ($tags as $tag) {
-                                          echo '<li>' . $tag->name . '</li>';
-                                        }
-                                        echo '</ul>';
-                                        ?>
-                                        
-                                    </li>
-                                    <!--Display Dynami post views-->
-                                    <li>Vistas: #<?php echo getPostViews(get_the_ID()); ?></li>
-                                     <!--Display Dynami post comments-->
-                                    <li>Comentarios:#<?php $totalcomments = get_comments_number(); echo $totalcomments; ?></li>
-                                </ul>
+                                <div class="photo" style="background-image: url('<?php bloginfo('template_directory');?>/assets/theme/img/blog/test-cat-bg.png')"></div>
+                          
                             </div>
                             <div class="description">
-                                <!--Display Dynami Title-->
-                                <h1 class="text-black"><?php the_title(); ?></h1>
-                                <!--Display dynami sub title-->
-                                <h2><?php the_subtitle(); ?></h2>
-                                <!--display dynamic expert-->
-                                <p class="text-black"> <?php the_excerpt();?></p>
-                                <p class="read-more">
-                                    <!--article cat 1 dynamic link-->
-                                    <a href="<?php the_permalink();?>" class="post-link">Leer más</a>
-                                </p>
+                                <h1 class="text-black">RESEÑAS</h1>
+                                <h2>Te comparto mi opinion en libros, peliculas, herramientas y servicios que eh probado</h2>
+
                             </div>
                         </div>
-                        <?php endif; endwhile; endif; ?>
                         
-                        
+                          <!--Blog Post Loop resenas = 11 -->
+                                
+                    <?php query_posts('cat=11'); ?>
+                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                        <?php  get_template_part( 'template-parts/content', get_post_type() ); ?>
+                        <?php endwhile; endif; ?>
+               <!--end loop -->
                     </section>
                     
-<!--
-                    <section id="content3" class="tab-content">
-                    </section>
-                    
+                    <!--EVENTS-->
                     <section id="content4" class="tab-content">
-                    </section>
+                        
+                         <div class="blog-card">
+                            <div class="meta">
+                                <div class="photo" style="background-image: url('<?php bloginfo('template_directory');?>/assets/theme/img/blog/events-cat-bg.png')"></div>
+                            
+                            </div>
+                            <div class="description">
+                                <h1 class="text-black">EVENTOS</h1>
+                                <h2>Te comparto mi experiencia en diversos eventos</h2>
 
-                    <section id="content5" class="tab-content">
+                            </div>
+                        </div>
+                            <!--Blog Post Loop events = 12 -->
+                                
+                    <?php query_posts('cat=12'); ?>
+                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                        <?php  get_template_part( 'template-parts/content', get_post_type() ); ?>
+                        <?php endwhile; endif; ?>
+               <!--end loop -->
                     </section>
--->
-
-                     <!--/ Cat Blog Tabs-->
                     
+                    
+                    <!--PEOPLE INTERVIEWS-->
+                    <section id="content5" class="tab-content">
+                        
+                         <div class="blog-card">
+                            <div class="meta">
+                                <div class="photo" style="background-image: url('<?php bloginfo('template_directory');?>/assets/theme/img/blog/interview-cat-bg.png')"></div>
+                            
+                            </div>
+                            <div class="description">
+                                <h1 class="text-black">PERSONAS INTERESANTES</h1>
+                                <h2>People dont cross our path by accident, they are either a blessing or a lesson</h2>
+
+                            </div>
+                        </div>
+                        
+                          <!--Blog Post Loop perople = 9 -->
+                                
+                    <?php query_posts('cat=9'); ?>
+                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                        <?php  get_template_part( 'template-parts/content', get_post_type() ); ?>
+                        <?php endwhile; endif; ?>
+               <!--end loop -->
+                    </section>
+
+                
+                    <?php wp_reset_query(); ?>
+                <!--/ Cat Blog Tabs-->    
                    
                 </div>
             </div>

@@ -24,7 +24,8 @@ else if(is_page(16)) {
 }
 else {
  get_header();
-
+}
+ wp_head();
 ?>
 
  <!-- hero  -->
@@ -102,13 +103,13 @@ else {
                     <label for="tab5"><i class="fa fa-users"></i><span></span></label>
                     
                    
-
+                    <!--NEW-->
                     <section id="content1" class="tab-content">
                         
                         <!--DEFAULT HEADER TYPE DESC BLOG POST-->
                              <div class="blog-card">
                             <div class="meta">
-                                <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
+                                <div class="photo" style="background-image: url('<?php bloginfo('template_directory');?>/assets/theme/img/blog/counter-bg.png')"></div>
                                 <ul class="details">
                                     <li>Total Articulos:#482</li>
                                     <li>Total Suscriptores:#10,101</li>
@@ -117,54 +118,15 @@ else {
                                 </ul>
                             </div>
                             <div class="description">
-                                <h1 class="text-black">LOS TOP 3 BLOGS MÁS VISTOS</h1>
-                                <h2>Los temas más populares y vistos del 2018</h2>
+                                <h1 class="text-black">LOS TOP 3 MÁS VISTOS</h1>
+                                <h2>Los temas más populares y vistos de cada categoría</h2>
 
                             </div>
                         </div>
                         
-                    <!--PHP LOOP ARTICLE IF POST & IF CAT-1-->
-                    <?php if ( have_posts() ) : ?>
-
-                        <?php /* Start the Loop */ ?>
-                        <?php while ( have_posts() ) : the_post(); ?>
-
-                            <?php
-                                /* Include the Post-Format-specific template for the content.
-                                 * If you want to override this in a child theme, then include a file
-                                 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-                                 */
-                                get_template_part( 'content', get_post_format() );
-                            ?>
-
-                        <?php endwhile; ?>
-                    <?php endif; ?>
-                        
-                    </section>
-                    
-                    <section id="content2" class="tab-content">
-                        
-                                   <div class="blog-card">
-                            <div class="meta">
-                                <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
-                                <ul class="details">
-                                    <li>Total Articulos:#482</li>
-                                    <li>Total Suscriptores:#10,101</li>
-                                    <li>Total Vistas: #1,000,000</li>
-                                    <li>Total Comentarios:#744</li>
-                                </ul>
-                            </div>
-                            <div class="description">
-                                <h1 class="text-black">LO QUE ESTOY APRENDIENDO</h1>
-                                <h2>Aprende conmigo, te dejo mis tips recursos y obstaculos</h2>
-
-                            </div>
-                        </div>
-                        
-                        
-                           <!--PHP LOOP ARTICLE IF POST & IF CAT-1-->
+                 <!--PHP LOOP ARTICLE IF POST & IF CAT-1-->
                          <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                         <?php if (in_category('cat-2')) : ?>
+                         <?php if (in_category('Enseñar')) : ?>
                         
                            <div class="blog-card alt">
                             <div class="meta">
@@ -173,7 +135,7 @@ else {
                                 <?php if (has_post_thumbnail()): ?>
                                     <?php the_post_thumbnail(array(150,150));?>
                                         <?php else: ?>
-                                            <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
+                                            <div class="photo" style="background-image: url('<?php bloginfo('template_directory');?>/assets/theme/img/blog/counter-bg.png')"></div>
                                 <?php endif; ?>      
                                 
                                 
@@ -219,19 +181,94 @@ else {
                         </div>
                         <?php endif; endwhile; endif; ?>
                         
+                    </section>
+                    
+                    <!--TEACH-->
+                    <section id="content2" class="tab-content">
+                        
+                        <div class="blog-card">
+                            <div class="meta">
+                                <div class="photo" style="background-image: url('<?php bloginfo('template_directory');?>/assets/theme/img/blog/learning-share.jpeg')"></div>
+                                <ul class="details">
+                                    <li>Total Articulos:#482</li>
+                                    <li>Total Suscriptores:#10,101</li>
+                                    <li>Total Vistas: #1,000,000</li>
+                                    <li>Total Comentarios:#744</li>
+                                </ul>
+                            </div>
+                            <div class="description">
+                                <h1 class="text-black">LO QUE ESTOY APRENDIENDO</h1>
+                                <h2>Aprende conmigo, te dejo mis tips recursos y obstaculos</h2>
+
+                            </div>
+                        </div>
                         
                     </section>
                     
-<!--
+                    <!--REVIEWS-->
                     <section id="content3" class="tab-content">
+                           <div class="blog-card">
+                            <div class="meta">
+                                <div class="photo" style="background-image: url('<?php bloginfo('template_directory');?>/assets/theme/img/blog/test-cat-bg.png')"></div>
+                                <ul class="details">
+                                    <li>Total Articulos:#482</li>
+                                    <li>Total Suscriptores:#10,101</li>
+                                    <li>Total Vistas: #1,000,000</li>
+                                    <li>Total Comentarios:#744</li>
+                                </ul>
+                            </div>
+                            <div class="description">
+                                <h1 class="text-black">RESEÑAS</h1>
+                                <h2>Te comparto mi opinion en libros, peliculas, herramientas y servicios que eh probado</h2>
+
+                            </div>
+                        </div>
                     </section>
                     
+                    <!--EVENTS-->
                     <section id="content4" class="tab-content">
+                        
+                         <div class="blog-card">
+                            <div class="meta">
+                                <div class="photo" style="background-image: url('<?php bloginfo('template_directory');?>/assets/theme/img/blog/events-cat-bg.png')"></div>
+                                <ul class="details">
+                                    <li>Total Articulos:#482</li>
+                                    <li>Total Suscriptores:#10,101</li>
+                                    <li>Total Vistas: #1,000,000</li>
+                                    <li>Total Comentarios:#744</li>
+                                </ul>
+                            </div>
+                            <div class="description">
+                                <h1 class="text-black">EVENTOS</h1>
+                                <h2>Te comparto mi experiencia en diversos eventos</h2>
+
+                            </div>
+                        </div>
+                          
+                    </section>
+                    
+                    
+                    <!--PEOPLE INTERVIEWS-->
+                    <section id="content5" class="tab-content">
+                        
+                         <div class="blog-card">
+                            <div class="meta">
+                                <div class="photo" style="background-image: url('<?php bloginfo('template_directory');?>/assets/theme/img/blog/interview-cat-bg.png')"></div>
+                                <ul class="details">
+                                    <li>Total Articulos:#482</li>
+                                    <li>Total Suscriptores:#10,101</li>
+                                    <li>Total Vistas: #1,000,000</li>
+                                    <li>Total Comentarios:#744</li>
+                                </ul>
+                            </div>
+                            <div class="description">
+                                <h1 class="text-black">PERSONAS INTERESANTES</h1>
+                                <h2>People dont cross our path by accident, they are either a blessing or a lesson</h2>
+
+                            </div>
+                        </div>
                     </section>
 
-                    <section id="content5" class="tab-content">
-                    </section>
--->
 
                      <!--/ Cat Blog Tabs-->
                     

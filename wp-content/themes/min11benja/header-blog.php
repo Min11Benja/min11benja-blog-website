@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: blog
+Template Name: header-blog
 */
 /**
  * The header for our theme
@@ -27,12 +27,27 @@ Template Name: blog
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>min11benja - Blog </title>
+    <title>min11benja - Blog Portafolio - Blog </title>
     <!-- Bootstrap -->
     <link href="<?php bloginfo('template_directory');?>/assets/external/bootstrap/css/bootstrap.css" rel="stylesheet">
     <!--favicon-->
-    <link rel="apple-touch-icon" href="<?php bloginfo('template_directory');?>/assets/theme/img/ico.png">
-    <link rel="shortcut icon" href="<?php bloginfo('template_directory');?>/assets/theme/img/ico.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Sarala:400,700%7COpen+Sans:400,300' rel='stylesheet' type='text/css'>
@@ -56,6 +71,15 @@ Template Name: blog
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->	
 	
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80877573-1 "></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-80877573-1 ');
+</script>
 	
 	<?php wp_head(); ?>
 </head>
@@ -141,7 +165,7 @@ Template Name: blog
             <div class="over-fly-area" id="share-ovefly">
                 <div class="inner-overfly">
                     <div class="middle-overfly">
-                        <h2 class="title-over">Si te gusto este contenid por favor comparte con tus amig@s</h2>
+                        <h2 class="title-over">Si te gusto este contenido por favor comparte con tus amig@s</h2>
                         <!-- You MUST change the URL definition in these links to share YOUR page - simply change the URL -->
                         <div class="social-share">
                             <a href="https://plus.google.com/share?url=http://www.min11benja.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>
