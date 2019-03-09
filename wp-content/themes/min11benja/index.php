@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="my-thumb">
-                    <div class="thumb-top"><a href="<?php bloginfo('template_directory');?>/assets/theme/img/pic/min11benja-bw.png" class="image-popup" title="min11benja"><img src="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-bw.png" class="img-thumbnail no-radius"  alt=""></a></div>
+                    <div class="thumb-top"><a href="<?php bloginfo('template_directory');?>/assets/theme/img/pic/min11benja-bw.png" class="image-popup" title="min11benja"><img src="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-bw.png" class="img-thumbnail no-radius"  alt="logo min11benja en version blanco y negro"></a></div>
                 </div>
 
                 <div class="content-hero">
@@ -60,7 +60,7 @@
                         <h4 class="font-normal">Hola extrañ@, este es mi blog personal</h4>
                         <h1 class="myname">min11benja</h1>
                         <h2>Donde comparto mis experiencias, las personas que conozco, los libros que estoy leyendo y lo que estoy aprendiendo<small class="text-yellow"><br>&rarr; Espero y te unas a la conversación</small></h2>
-                        <p><a href="#" class="btn btnc1"><span>Suscribete</span></a></p>
+                        <!-- <p><a href="#" class="btn btnc1"><span>Suscribete</span></a></p> -->
                     </div>
                 </div>
             </div>

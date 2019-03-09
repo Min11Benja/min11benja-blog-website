@@ -24,12 +24,26 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>min11benja - Blog Portafolio - Acerca de</title>
     
-
+    <!--SEO Meta tags-->
+    <meta name="keywords" content="front end, ui ux, speed code, min11benja, front end back end" />
     
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Brand Name | Major Product Category - Minor Product Category - Name of Product -->
+    <!--Primary Keyword - Secondary Keyword | Brand Name 8-foot Green Widgets - Widgets & Tools | primary keyword-->
+    <title>min11benja | front end - ui ux | Acerca de min11benja | Speed Code</title>
+    <meta name="description" content="Acerca de min11benja, curriculum en linea de min11benja programador front end san luis potosi mexico.">
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="location" content="San Luis Potosi Mexico" />
+    <meta name="rating" content="General" />
+    <meta name="url" content="http://www.min11benja.com/" />
+    <meta name="content-language" content="Spanish" />
     
     <!-- Bootstrap -->
     <link href="<?php bloginfo('template_directory');?>/assets/external/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -75,8 +89,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
-
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80877573-1 "></script>
     <script>
@@ -87,8 +99,6 @@
   gtag('config', 'UA-80877573-1 ');
 </script>
 
-
-
     <?php wp_head(); ?>
 </head>
 
@@ -97,7 +107,7 @@
     <div class="page-loader">
         <div class="v-align-center">
             <div class="middle-content">
-                <div class="img-p-area"> <img src="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-bw.png" alt="" class="img-thumbnail no-radius"></div>
+                <div class="img-p-area"> <img src="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-bw.png" alt="logo min11benja en formato blanco y negro" class="img-thumbnail no-radius"></div>
                 <span class="itsme">min11benja</span>
                 <h4>Acerca de</h4>
                 <p>Cargando</p>

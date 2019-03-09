@@ -113,26 +113,26 @@ else {
                             <div class="hover-area">
                                 <div class="text-vcenter-area">
                                     <div class="text-vcenter">
-                                        <h3><a href="http://www.corecompetent.mx/lp-guia.html" target="_blank">Core Competent<i class="fa fa-link"></i></a></h3>
+                                        <h3><a href="https://s3.amazonaws.com/anana-temp-site/corecompetent-temp/lp-guia-psicometrica.html" target="_blank">Core Competent<i class="fa fa-link"></i></a></h3>
                                     </div>
                                 </div>
                             </div>
                             <div id="bs-gslider1" class="carousel slide carousel-fade" data-ride="carousel">
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/c1.png" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/c1.png" alt="min11benja - imagen de pagina landing para core competent 1 de 5">
                                     </div>
                                     <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/c2.png" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/c2.png" alt="min11benja - imagen de pagina landing para core competent 2 de 5">
                                     </div>
                                     <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/c3.png" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/c3.png" alt="min11benja - imagen de pagina landing para core competent 3 de 5">
                                     </div>
                                     <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/c4.png" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/c4.png" alt="min11benja - imagen de pagina landing para core competent 4 de 5">
                                     </div>
                                     <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/c5.png" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/c5.png" alt="min11benja - imagen de pagina landing para core competent 5 de 5">
                                     </div>
                                 </div>
                             </div>
@@ -197,7 +197,7 @@ else {
                                     </div>
                                 </div>
                             </div>
-                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/elgourmet.png" alt="">
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/elgourmet.png" alt="min11benja pagina web para restaurante el gourmet">
                         </div>
 
                         <div class="col-sm-4 col-xs-6 item-box pgw">
@@ -208,7 +208,7 @@ else {
                                     </div>
                                 </div>
                             </div>
-                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/paola-torre.png" alt="">
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/paola-torre.png" alt="min11benja pagina landing para Nutriologa Paola Torre">
                         </div>
 
 
@@ -223,7 +223,7 @@ else {
                                     </div>
                                 </div>
                             </div>
-                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/jump-out.png" alt="">
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/jump-out.png" alt="min11benja pagina landing para Jump Out">
                         </div>
 
                         <div class="col-sm-4 col-xs-6 item-box pgw">
@@ -234,7 +234,7 @@ else {
                                     </div>
                                 </div>
                             </div>
-                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/urban-clean.png" alt="">
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/urban-clean.png" alt="min11benja pagina landing para Urban Clean">
                         </div>
                         
                             <div class="col-sm-4 col-xs-6 item-box pgw">
@@ -337,7 +337,7 @@ else {
                                     </div>
                                 </div>
                             </div>
-                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/nomilive.png" alt="">
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/nomilive.png" alt="min11benja pagina landing para Nomilive">
                         </div>
                         
                           <div class="col-sm-4 col-xs-6 item-box pgw">
@@ -369,7 +369,7 @@ else {
                                     </div>
                                 </div>
                             </div>
-                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/iutuber-hand-logo-version-youtube.png" alt="">
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/iutuber-hand-logo-version-youtube.png" alt="min11benja logo para marca de iutubers">
                         </div>
                         <div class="col-sm-4 col-xs-6 item-box vid">
                             <div class="hover-area">
@@ -379,7 +379,7 @@ else {
                                     </div>
                                 </div>
                             </div>
-                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/good-idea-video.png" alt="">
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/good-idea-video.png" alt="video thubnail para canal estartupero - como saber si mi idea de startup es buena">
                         </div>
                         
                          <div class="col-sm-4 col-xs-6 item-box vid">
@@ -390,7 +390,7 @@ else {
                                     </div>
                                 </div>
                             </div>
-                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/tinder-video.png" alt="">
+                            <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/tinder-video.png" alt="min11benja - video speedcode ">
                         </div>
                         
                         <div class="col-sm-4 col-xs-6 item-box img">
@@ -440,22 +440,22 @@ else {
                             <div id="bs-gslider3" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3010">
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/21%20pasos%20arancar%20una%20startup.png" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/21%20pasos%20arancar%20una%20startup.png" alt="min11benja imagen para pefil instagram estartupero 21 pasos para arancar una startup">
                                     </div>
                                     <div class="item active">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/21-steps-startup-4-01.png" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/21-steps-startup-4-01.png" alt=" imagen para perfil de estartupero en instagram 1 de 5">
                                     </div>
                                     <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/startup-21-18.png" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/startup-21-18.png" alt="imagen para perfil de estartupero en instagram 2 de 5">
                                     </div>
                                     <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/14-17%20pasos%20arancar%20una%20startup.png" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/14-17%20pasos%20arancar%20una%20startup.png" alt="imagen para perfil de estartupero en instagram 3 de 5">
                                     </div>
                                     <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/13-10%20pasos%20arancar%20una%20startup.png" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/13-10%20pasos%20arancar%20una%20startup.png" alt="imagen para perfil de estartupero en instagram 4 de 5">
                                     </div>
                                     <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/3-Circle%20Venn%20Diagram.png" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/3-Circle%20Venn%20Diagram.png" alt="imagen para perfil de estartupero en instagram 5 de 5">
                                     </div>
 
 
@@ -652,23 +652,23 @@ else {
                                 <div class="carousel-inner" role="listbox">
 
                                     <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/poster-candidatas.jpg" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/poster-candidatas.jpg" alt="min11benja poster evento concurso de miss ahualulco 2010">
                                     </div>
                                     <div class="item active">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/poster-gta.jpg" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/poster-gta.jpg" alt="min11benja poster evento feria patronal de ahualulco 2015">
                                     </div>
                                     <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/poster-navidad.jpg" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/poster-navidad.jpg" alt="min11benja poster fiesta navideña">
                                     </div>
                                     <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/poster-skool-startup.jpg" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/poster-skool-startup.jpg" alt="min11benja poster taller de emprendimiento">
                                     </div>
                                     <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/poster-ppp.jpg" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/poster-ppp.jpg" alt="min11benja poster para evento puro pinche party concurso">
                                     </div>
 
                                     <div class="item">
-                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/Bike%20Themed%20Event%20Flyer.png" alt="">
+                                        <img src="<?php bloginfo('template_directory');?>/assets/theme/img/thumb/Bike%20Themed%20Event%20Flyer.png" alt="min11benja poster meetup convocatoria 2.3 estartupero">
                                     </div>
 
 
@@ -723,8 +723,8 @@ else {
                             <h2 class="title"><span>Clientes recientes</span></h2>
                             <div class="white-space-10"></div>
                             <ul class="list-inline text-center list-force-img clearfix">
-                                <li><a href="#"><img src="<?php bloginfo('template_directory');?>/assets/theme/img/patner/anana-cllient.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="<?php bloginfo('template_directory');?>/assets/theme/img/patner/fission-client.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="<?php bloginfo('template_directory');?>/assets/theme/img/patner/anana-cllient.jpg" alt="min11benja logo de cliente anana"></a></li>
+                                <li><a href="#"><img src="<?php bloginfo('template_directory');?>/assets/theme/img/patner/fission-client.jpg" alt="min11benja logo de cliente fission branding"></a></li>
 
                             </ul>
                             <!-- recent client -->
@@ -734,7 +734,7 @@ else {
                             <div class="white-space-10"></div>
                             <ul class="list-unstyled list-testimonial clearfix">
                                 <li>
-                                    <img src="<?php bloginfo('template_directory');?>/assets/theme/img/people/1.jpg" alt="" class="img-thumbnail img-circle">
+                                    <img src="<?php bloginfo('template_directory');?>/assets/theme/img/people/1.jpg" alt="min11benja imagen de perfil para javier de imapctum" class="img-thumbnail img-circle">
                                     <div class="text-testimonial">
                                         <h3>Recomendado ampliamente
                                             <small class="ratting">
@@ -751,7 +751,7 @@ else {
                                     </div>
                                 </li>
                                 <li>
-                                    <img src="<?php bloginfo('template_directory');?>/assets/theme/img/people/2.jpg" alt="" class="img-thumbnail img-circle">
+                                    <img src="<?php bloginfo('template_directory');?>/assets/theme/img/people/2.jpg" alt="min11benja imagen de perfil de Luis Alberto de fission branding" class="img-thumbnail img-circle">
                                     <div class="text-testimonial">
                                         <h3>Lorem ipsum dolor
                                             <small class="ratting">

@@ -20,47 +20,57 @@ if ( post_password_required() ) {
 }
 ?>
 
- <div class="white-space-10"></div>
+<div id="comments" class="comments-area">
 
 	<?php
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) :
 		?>
-    <h3 class="title">
-       <span>
-     	<?php
+		<h2 class="comments-title">
+			<?php
 			$min11benja_comment_count = get_comments_number();
 			if ( '1' === $min11benja_comment_count ) {
 				printf(
 					/* translators: 1: title. */
-					esc_html__( 'Una sola opinion en &ldquo;%1$s&rdquo;', 'min11benja' ),
+					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'min11benja' ),
 					'<span>' . get_the_title() . '</span>'
 				);
 			} else {
 				printf( // WPCS: XSS OK.
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s opinion acerca de &ldquo;%2$s&rdquo;', '%1$s opiniones acerca de &ldquo;%2$s&rdquo;', $min11benja_comment_count, 'comments title', 'min11benja' ) ),
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $min11benja_comment_count, 'comments title', 'min11benja' ) ),
 					number_format_i18n( $min11benja_comment_count ),
 					'<span>' . get_the_title() . '</span>'
 				);
 			}
 			?>
-        </span>
-    </h3><!-- .comments-title -->
+		</h2><!-- .comments-title -->
 
-	
-<div class="white-space-10"></div>
+		<?php the_comments_navigation(); ?>
 
- <ul class="comments">
-   <?php wp_list_comments( 'type=comment&callback=mytheme_comment' ); ?>
- </ul><!-- end  blog comments -->
+		<ol class="comment-list">
+			<?php
+			wp_list_comments( array(
+				'style'      => 'ol',
+				'short_ping' => true,
+			) );
+			?>
+		</ol><!-- .comment-list -->
 
-<?php if ( !comments_open() ) : ?>
-			<p class="no-comments"><?php esc_html_e( 'Commentarios estan cerrados para este blog post.', 'min11benja' ); ?></p>
-		<?php endif; ?>
-<?php endif; // have_comments() ?>
+		<?php
+		the_comments_navigation();
 
+		// If comments are closed and there are comments, let's leave a little note, shall we?
+		if ( ! comments_open() ) :
+			?>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'min11benja' ); ?></p>
+			<?php
+		endif;
 
-<?php comment_form(); ?>
+	endif; // Check for have_comments().
 
+	comment_form();
+	?>
+
+</div><!-- #comments -->
            
