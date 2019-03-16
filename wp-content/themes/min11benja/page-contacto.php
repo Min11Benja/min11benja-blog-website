@@ -18,8 +18,9 @@ Template Name: Contact Page
 
 <?php 
 
- get_header();
- wp_head();
+    get_header('contacto');
+
+
 ?>
 
 
@@ -62,7 +63,7 @@ Template Name: Contact Page
             </div>
             <!-- hero  -->
         </header>
-        <!-- end HEader -->
+        <!-- end Header -->
         <!-- Content body -->
         <div class="content-body">
        

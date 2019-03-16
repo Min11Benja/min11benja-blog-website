@@ -16,16 +16,9 @@ Template Name: Blog Cat Page
  */
 ?>
 <?php 
-if(is_page(18)) {
+
  get_header('blog');
-}
-else if(is_page(16)) {
- get_header('portfolio');
-}
-else {
- get_header();
-}
- wp_head();
+
 ?>
 
  <!-- hero  -->

@@ -19,7 +19,7 @@
 
 <!-- footer -->
         <footer class="main-footer">
-            &COPY; Copyright 2018 | Pagina Web hecha con ♥ por <a href="page-about.html">min11benja</a>
+            &COPY; Copyright 2018 | Pagina Web hecha con ♥ por <a href="<?php echo get_page_link(14); ?>">min11benja</a>
         </footer>
         <!-- footer -->
     </div>

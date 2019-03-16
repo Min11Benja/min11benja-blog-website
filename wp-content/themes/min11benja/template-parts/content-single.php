@@ -16,7 +16,7 @@
     echo '<span class="cat">'. get_the_category( $id )[0]->name .'</span>';
      echo '<span class="cat">'. get_the_category( $id )[1]->id .'</span>';
     ?>
-   
+    <h3><?php the_subtitle(); ?></h3> 
     <h1>
         <?php the_title( '<h1 class="">', '</h1>' ); ?>
     </h1>
@@ -41,6 +41,7 @@
 
 <div class="post-entry">
     <div class="post-entry">
+         
         <?php
 		the_content();
 
@@ -76,7 +77,7 @@
     <img src="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-author-thumbnail.png" class="img-thumbnail img-circle" alt="">
     <div class="desc">
         <h3><a href="#">Escrito por min11benja</a></h3>
-        <p>Me llamo Benjamin, soy dessarrollador *front end*, y en mis tiempos libres escribo, armo maquinas, doy clases, grabo y comparto videos, pero la mayoria del tiempo me encontraras buscando resolver problemas interesantes y sonsacando a personas para que vean cierta pelicula vayan algun evento o sigan su sueño.</p>
+        <p>Me llamo Benjamin, soy dessarrollador *front end*, la mayoria del tiempo me encontraras buscando resolver problemas interesantes y sonsacando a personas para que vean cierta pelicula vayan algun evento o sigan su sueño.</p>
         <p class="author-socials">
             <a target="_blank" href="https://www.facebook.com/min11benja/"><i class="fa fa-facebook"></i></a>
             <a target="_blank" href="https://twitter.com/Min11Benja"><i class="fa fa-twitter"></i></a>

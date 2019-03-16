@@ -17,16 +17,7 @@ Template Name: About Page
 ?>
 
 <?php 
-if(is_page(18)) {
- get_header('blog');
-}
-else if(is_page(16)) {
- get_header('portfolio');
-}
-else {
- get_header();
-}
- wp_head();
+get_header('primary');
 ?>
 
 

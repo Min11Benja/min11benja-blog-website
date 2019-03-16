@@ -121,6 +121,7 @@ body {
   line-height: 1;
   margin: 0;
   font-size: 1.7rem;
+    text-align: left;
 }
 .blog-card .description h2 {
   font-size: 1rem;
@@ -233,8 +234,11 @@ body {
 }
 
 h1 {
-  color: #ccc;
+ 
   text-align: center;
+}
+h2{
+     color: #ccc;
 }
 
 a {

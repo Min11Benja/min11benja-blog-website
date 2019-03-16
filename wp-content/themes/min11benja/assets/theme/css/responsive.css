@@ -1,0 +1,90 @@
+/*///////////////////////////////////////////////-DESKTOP & TV -/////////////////////////////////////////////////////////*/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (max-width: 1280px) {}
+
+/*///////////////////////////////////////////////-TABLET-/////////////////////////////////////////////////////////*/
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (max-width: 1028px) {}
+
+@media (max-width: 1024px) {}
+
+
+/*Ipad Pro*/
+
+@media (max-width: 835px) {}
+
+
+/*Kindle Fire*/
+
+@media (max-width: 801px) {}
+
+/*///////////////////////////////////////////////-MOBILE-/////////////////////////////////////////////////////////*/
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 480px) {}
+
+/*mobile iPhone Plus - 414 px*/
+
+@media screen and (max-width: 415px) {}
+
+/*mobile -iPhone 6/7/8 - 375 px*/
+
+@media screen and (max-width: 376px) {}
+
+/*mobile -samsung Galaxy s9/s9+ - 361 px*/
+
+@media screen and (max-width: 361px) {
+    
+    h2, .h2 {
+    font-size: 20px;
+}
+    .hero-01 .v-content {
+   
+    padding-top: 100px;
+    padding-bottom: 45px;
+}
+    label .fa {
+        font-size: 0.8em;
+    }
+    label {
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    float: left;
+    width: 33%;
+    padding: 1em;
+    color: #757575;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    background: #f0f0f0;
+}
+    .blog-card .meta {
+
+    position: relative;
+    z-index: 0;
+    height: 100px;
+
+}
+}

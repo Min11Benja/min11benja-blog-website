@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: header-blog
+Template Name: header-contact
 */
 /**
  * The header for our theme
@@ -21,11 +21,13 @@ Template Name: header-blog
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+<head>
+    
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -36,10 +38,8 @@ Template Name: header-blog
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- Brand Name | Major Product Category - Minor Product Category - Name of Product -->
     <!--Primary Keyword - Secondary Keyword | Brand Name 8-foot Green Widgets - Widgets & Tools | primary keyword-->
-    <title>min11benja | front end - ui ux | Blog de min11benja | Speed Code</title>
-    <meta name="description" content="Blog de min11benja, blog de programador front end en san luis potosi mexico.">
-    <meta name="robots" content="index,follow" />
-    <meta name="googlebot" content="index,follow" />
+    <title>min11benja | front end - ui ux | Contacto a min11benja | Speed Code</title>
+    <meta name="description" content="Contacto a min11benja, curriculum en linea de min11benja programador front end san luis potosi mexico.">
     <meta name="revisit-after" content="7 days" />
     <meta name="location" content="San Luis Potosi Mexico" />
     <meta name="rating" content="General" />
@@ -67,13 +67,14 @@ Template Name: header-blog
     <meta name="msapplication-TileImage" content="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Sarala:400,700%7COpen+Sans:400,300' rel='stylesheet' type='text/css'>
 
     <!-- Theme Style -->
     <link href="<?php bloginfo('template_directory');?>/assets/theme/css/style.css" rel="stylesheet" type="text/css">
     <!-- Your custom css -->
-    <link href="<?php bloginfo('template_directory');?>/assets/theme/css/theme-custom.css" rel="stylesheet">
+
 
     <!-- Font Icons -->
     <link href="<?php bloginfo('template_directory');?>/assets/external/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -82,39 +83,35 @@ Template Name: header-blog
     <!-- lightbox -->
     <link href="<?php bloginfo('template_directory');?>/assets/external/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-    
-    <!-- responsive -->
-    <link href="<?php bloginfo('template_directory');?>/assets/theme/css/responsive.css" rel="stylesheet">
-    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->	
-	
+    <![endif]-->
+
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80877573-1 "></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80877573-1 "></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-80877573-1 ');
 </script>
-	
-	<?php wp_head(); ?>
+
+    <?php wp_head(); ?>
 </head>
 
-<body >
+<body>
     <!-- Page Loader -->
     <div class="page-loader">
         <div class="v-align-center">
             <div class="middle-content">
                 <div class="img-p-area"> <img src="<?php bloginfo('template_directory');?>/assets/theme/img/min11benja-bw.png" alt="logo min11benja en formato blanco y negro" class="img-thumbnail no-radius"></div>
                 <span class="itsme">min11benja</span>
-                <h4>Blog Catálogo</h4>
-                <p>Cargando...</p>
+                <h4>Contacto</h4>
+                <p>Cargando</p>
                 <div class="anim-pg">
                     <span></span>
                 </div>
@@ -137,18 +134,18 @@ Template Name: header-blog
             <div class="over-fly-area" id="menu-ovefly">
                 <div class="inner-overfly">
                     <div class="middle-overfly">
-                        
+
                         <h2 class="title-over">Menu</h2>
-                        
-                        
+
+
                         <!-- If the menu (WP admin area) is not set, then the "menu_class" is applied to "container". In other words, it overwrites the "container_class". Ref: http://wordpress.org/support/topic/wp_nav_menu-menu_class-usage-bug?replies=4 -->
-					
-					<?php
+
+                        <?php
 						wp_nav_menu( array(
 						
 						/*Must be registered with register_nav_menu() in order to be selectable by the user.*/
-							'theme_location'	=> 'blog',
-					
+							'theme_location'	=> 'contacto',
+			
 						/*container_id: ID that is applied to the container.*/
 							'container_id'		=> 'menu',
 							
@@ -159,8 +156,8 @@ Template Name: header-blog
 							'menu_class'		=> 'nav2'
 						) );
 					?>
-                                         
-                        
+
+
                     </div>
                 </div>
             </div>
