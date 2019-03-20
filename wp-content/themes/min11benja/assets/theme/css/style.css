@@ -428,7 +428,7 @@ body.dark-page .content-body {
 }
 @media (max-width: 500px) {
   .big-qoute h3 {
-    font-size: 30px !important;
+    font-size: 30px;
     line-height: 1.5em;
   }
 }

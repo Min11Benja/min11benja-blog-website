@@ -72,10 +72,10 @@ get_header('primary');
                 <div class="section-padd bg2">
                     <div class="container-body clearfix">
                         <div class="big-qoute">
-                            <h2 class="text-white ">Creo firmemente en que el ver como se hacen las cosas frente a ti reduce enormemente la barrera de entrada para los demás.
+                            <h3 class="text-white ">Creo firmemente en que el ver como se hacen las cosas frente a ti reduce enormemente la barrera de entrada para los demás.
                                 
                             
-                            <br>Inspirar a otros a crear y compartir es mi razón de este canal.<small><br>&rarr; Espero y te animes a probar la programación de interfaces.</small></h2>
+                            <br>Inspirar a otros a crear y compartir es mi razón de este canal.<small><br>&rarr; Espero y te animes a probar la programación de interfaces.</small></h3>
 
                         </div>
                     </div>
