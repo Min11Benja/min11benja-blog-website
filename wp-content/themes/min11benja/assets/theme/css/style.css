@@ -1907,7 +1907,7 @@ blockquote {
   font-family: 'Sarala', sans-serif;
   border: 1px solid #ffffff;
   border-radius: 0;
-  color: #ffffff;
+  /* color: #ffffff; */
   position: relative;
   overflow: hidden;
   min-width: 90px;
