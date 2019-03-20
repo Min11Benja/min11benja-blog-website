@@ -65,7 +65,7 @@ else {
                         <h4 class="font-normal">Hola extrañ@, soy</h4>
                         <h1 class="myname">min11benja</h1>
                         <h3 class="font-normal with-line">Estos son algunos de los proyectos en los que eh trabajado</h3>
-                        
+                        <p> <a href="https://drive.google.com/open?id=1mt_V_c_t2jUHVSmJt4DpAnJLj6Y7yTT4" class="btn btnc1" target="_blank"><span>Descargar C.V.</span></a> - <a href="#" class="btn btnc1" target="_blank"><span>Cotizar proyecto</span></a></p>
                     </div>
                 </div>
             </div>

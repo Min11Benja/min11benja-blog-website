@@ -20,7 +20,6 @@ Template Name: About Page
 get_header('primary');
 ?>
 
-
   <!-- hero  -->
             <div class="hero-01">
                 <div class="hero-border">
@@ -57,8 +56,8 @@ get_header('primary');
                     <div class="v-content">
                         <h4 class="font-normal">Hola extrañ@, soy</h4>
                         <h1 class="myname">min11benja</h1>
-                        <h3 class="font-normal with-line">Youtuber, Emprendedor, Full Stack Developer, Profe de Ingles, Arduino Maker</h3>
-                        <p> <a href="https://drive.google.com/open?id=1mt_V_c_t2jUHVSmJt4DpAnJLj6Y7yTT4" class="btn btnc1" target="_blank"><span>Descargar C.V.</span></a></p>
+                        <h3 class="font-normal with-line ">Pero más importante del quien soy o de donde vengo es el porque subo estos videos.</h3>
+                       <p>Creo que estos videos de Speed Code son geniales porque, nos hacen sentir como si fuéramos nosotros los que diseñamos y escribimos todo ese código. Te quiero compartir mi proceso, de inicio a fin. Esperando que te motiven a querer replicarlo.</p>
                     </div>
                 </div>
             </div>
@@ -73,7 +72,10 @@ get_header('primary');
                 <div class="section-padd bg2">
                     <div class="container-body clearfix">
                         <div class="big-qoute">
-                            <h2 class="text-white">Este es mi blog personal, donde comparto mis experiencias, las personas que conozco, los libros que estoy leyendo y lo que estoy aprendiendo.<small><br>&rarr; Espero y te unas a la conversación</small></h2>
+                            <h2 class="text-white ">Creo firmemente en que el ver como se hacen las cosas frente a ti reduce enormemente la barrera de entrada para los demás.
+                                
+                            
+                            <br>Inspirar a otros a crear y compartir es mi razón de este canal.<small><br>&rarr; Espero y te animes a probar la programación de interfaces.</small></h2>
 
                         </div>
                     </div>
@@ -89,26 +91,18 @@ get_header('primary');
                                 </div>
                                 <h2 class="title"><span>También es mi CV por si quieres contratarme para un proyecto</span></h2>
 
-                                <h3>Es dificil describir quien soy, <br><br>A lo mejor si te comparto mis creencias te puedes dar una mejor idea</h3>
-
                                 <h3>Creo en la mejora continua</h3>
-                                <p>Si no estoy creciendo, aprendiendo, moviendome hacia adelante, en busca del proximo reto, no estoy viviendo una vida emocionante y cumplida. Creo que dicha vida no se busca sino más bien es algo que creas, algo en lo que creces cometiendo errores y aprendiendo de ellos, encontrando lo real y único que eres y expresándolo lo mejor que puedas</p>
+                                
 
                                 <h3>Aprendo mejor cuando busco enseñar a otros</h3>
-                                <p> El ayudar a otros alcanzar su potencial es algo que me motiva profundamente</p>
+                               
 
                                 <h3>Inspirar a otros a crear y compartir es mi razón de este blog y otros canales en linea</h3>
-                                <p>Creo firmemente en que el ver como se hacen las cosas frente a ti reduce enormemente la barrera de entrada para animarte a probar algo. Trato de ayudar y motivar a otros para hacer tiempo y perseguir sus sueños frente a adversidades y desafíos</p>
-
+                               
                                 <h3>Me emociona hablar de todo</h3>
-                                <p>Incluso si no son gran cosa, compartiré las ideas que tengo en mente y los planes que espero con cualquiera que se cruce en mi camino y me de la oportunidad de escuchar</p>
-
-                                <h3>Voy por lo que quiero</h3>
-                                <p>No soy el tipo de persona que espera que las cosas caigan en su regazo, sé lo que quiero y no soy tímido para pedirlo exponerme y hacer lo que sea necesario para conseguirlo</p>
-
+                               
                                 <h3>Siempre busco ver lo mejor en todas las personas y en cada situación</h3>
-                                <p>Creo que hay valor y belleza en todo y en cualquier persona, y que es nuestro trabajo encontrarlo y no el de ellos mostrarnos</p>
-
+                                
                             </div>
                         </div>
                     </div>
@@ -119,7 +113,7 @@ get_header('primary');
                         <div class="desc-mini no-br-l">
                             <div class="mid-desc-mini">
                                 <h3>SOY TODÓLOGO</h3>
-                                <p>Porque yo sé que tu no eres tu titulo tu aspecto o solo bueno en una sola cosa.<br> Tú eres mucho más que eso, &amp; yo tambien.</p>
+                                
                             </div>
                         </div>
                     </div>
@@ -158,7 +152,8 @@ get_header('primary');
                                 <div class="desc-mini">
                                     <div class="mid-desc-mini">
                                         <h4>Correos</h4>
-                                        <p>info@min11benja.com<br>contacto@estartupero.com<br>contacto@facebookero.com<br>contacto@frontendmaistro.com</p>
+                                        <p>info@min11benja.com<br>
+                                        contacto@estartupero.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -166,7 +161,7 @@ get_header('primary');
                                 <div class="desc-mini">
                                     <div class="mid-desc-mini">
                                         <h4>Páginas Web</h4>
-                                        <p> www.min11benja.com<br>www.estartupero.com<br>www.facebookero.com<br>www.frontendmaistro.com</p>
+                                        <p> www.min11benja.com<br>www.estartupero.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -176,8 +171,7 @@ get_header('primary');
                                         <h4>Canales en Youtube</h4>
                                         <p>min11benja</p>
                                         <p>estartupero</p>
-                                        <p>facebookero</p>
-                                        <p>frontendmaistro</p>
+                                        
                                     </div>
                                 </div>
                             </div>
